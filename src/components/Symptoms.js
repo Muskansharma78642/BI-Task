@@ -1,9 +1,11 @@
 import React from 'react'
 
 const Symptoms = () => {
+    var imageName = require('../assets/symptoms.png')
+
   return (
-    <div>
-      Symptoms
+    <div className='symptomsCard'>
+        <img src={imageName} alt='Symptoms Image'/>
     </div>
   )
 }
