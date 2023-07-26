@@ -37,4 +37,8 @@ li span{
     height: 560px;
     margin: 15px;
 }
-  
+
+.sidebar{
+    height: 99vh;
+    border-radius: 25px !important;
+}
