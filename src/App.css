@@ -34,11 +34,27 @@ li span{
     border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: relative;
-    height: 560px;
+    height: 100vh;
     margin: 15px;
 }
 
 .sidebar{
     height: 99vh;
     border-radius: 25px !important;
+    float: left;
+}
+
+.statistics{
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: left;
+    width: 71%;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.statisticsBarGraph{
+    float: left;
+    width: 80%;
+    height: 250;
 }
