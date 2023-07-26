@@ -35,12 +35,12 @@ li span{
     border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: relative;
-    height: 130vh;
+    height: 146vh;
     margin: 15px;
 }
 
 .sidebar{
-    height: 130vh;
+    height: 146vh;
     border-radius: 25px !important;
     float: left;
 }
@@ -80,4 +80,15 @@ li span{
     height: 20%;
     width: 20%;
     float: right;
+}
+
+.casesChart{
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 35vh;
+    width: 43vh;
+    float: left;
+    margin-right: 55px;
+    margin-left: 15px;
+    padding-top: 4% !important;
 }
