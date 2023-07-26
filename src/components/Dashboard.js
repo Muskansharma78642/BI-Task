@@ -12,7 +12,8 @@ const Dashboard = () => {
   return (
     <div className='dashboardContainer' >
         <VerticalNavbar />
-      Dashboard
+      <p style={{ marginBottom: '1px', color:'#4329c4'}} ><b>Covid-19</b></p>
+      <p style={{ color:'GrayText', fontSize:'9px' }}>Live Tracker Dashboard</p>
       <Cases />
       <Death />
       <Recovered />

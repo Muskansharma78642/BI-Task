@@ -11,12 +11,12 @@ const Statistics = () => {
     const [loading, setLoading] = useState(true)
     const [deathData, setDeathData] = useState([]);
     const [recoverData, setRecoverData] = useState([]);
-    let deathCases = [];
-    let recoveredCases = [];
 
     const fetchURL = async () => {
         let res = await fetch(URL);
         let data = await res.json()
+        let deathCases = [];
+        let recoveredCases = [];    
         let setCaseData = [
             data.AN, data.AP, data.AR, data.AS, data.BR, data.CH, data.CT, data.DL, data.DN, data.GA, data.GJ, data.HP, data.HR, data.JH, data.JK, data.KA, data.KL, data.LA, data.LD, data.MH, data.ML, data.MN, data.MP, data.MZ, data.NL, data.OR, data.PB, data.PY, data.RJ, data.SK, data.TG, data.TN, data.TR, data.TT, data.UP, data.UT, data.WB
         ]
@@ -27,14 +27,6 @@ const Statistics = () => {
         })
         setDeathData([...deathCases]);
         setRecoverData([...recoveredCases]);
-
-        console.log('death data -->',deathData)
-        console.log('recover data -->', recoverData)
-
-        
-        console.log('death -->',deathCases)
-        console.log('recover -->', recoveredCases)
-
         setLoading(false);
     }
 
