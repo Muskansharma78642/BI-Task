@@ -7,10 +7,11 @@ import Symptoms from './Symptoms'
 import VerticalNavbar from './VerticalNavbar'
 
 const Dashboard = () => {
+  //This component contains all the other components and displays them as a whole
   return (
     <div className='dashboardContainer' >
         <VerticalNavbar />
-      <p style={{ marginBottom: '1px', color:'#4329c4'}} ><b>Covid-19</b></p>
+      <p style={{ marginBottom: '1px', color:'#4329c4', fontSize:'20px'}} ><b>Covid-19</b></p>
       <p style={{ color:'GrayText', fontSize:'9px' }}>Live Tracker Dashboard</p>
       <Cases />
       <Statistics />

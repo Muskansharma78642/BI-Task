@@ -2,8 +2,10 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import { Doughnut } from 'react-chartjs-2';
 import {Chart, ArcElement} from 'chart.js'
+// register chart.js elements we will be using 
 Chart.register(ArcElement);
 
+// URL to fetch data
 const URL = "https://data.covid19india.org/v4/min/data.min.json";
 
 const WorldMap = () => {
@@ -15,27 +17,34 @@ const WorldMap = () => {
         fetchURL();
     }, [loading])
 
+    //fetch data
     const fetchURL = async () => {
         let res = await fetch(URL);
         let data = await res.json();
-        // console.log('URL --->', data)
+
+        //manipulate JSON
         let setCaseData = [
             data.AN, data.AP, data.AR, data.AS, data.BR, data.CH, data.CT, data.DL, data.DN, data.GA, data.GJ, data.HP, data.HR, data.JH, data.JK, data.KA, data.KL, data.LA, data.LD, data.MH, data.ML, data.MN, data.MP, data.MZ, data.NL, data.OR, data.PB, data.PY, data.RJ, data.SK, data.TG, data.TN, data.TR, data.TT, data.UP, data.UT, data.WB
         ]
+
+        // get sum of all the deaths 
         let totalDeaths = setCaseData.reduce(function(prev, current) {
             return prev + +current.total.deceased
           }, 0);
 
+        // get sum of all the recoveries
         let totalRecovered = setCaseData.reduce(function(prev, current) {
             return prev + +current.total.recovered
           }, 0);
-        
+
+        // get active cases
         let totalActive = totalRecovered - totalDeaths
 
-        console.log('Death->', totalDeaths, ' Recovered ->', totalRecovered, ' Active ->', totalActive);
+        // console.log('Death->', totalDeaths, ' Recovered ->', totalRecovered, ' Active ->', totalActive);
 
+        // update state
         setDisplayData([totalDeaths, totalRecovered, totalActive])
-        console.log(displayData);
+        // console.log(displayData);
 
         setLoading(false);
     }

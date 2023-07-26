@@ -5,7 +5,7 @@ const Symptoms = () => {
 
   return (
     <div className='symptomsCard'>
-        <img src={imageName} alt='Symptoms Image'/>
+        <img src={imageName} alt='Symptoms'/>
     </div>
   )
 }
