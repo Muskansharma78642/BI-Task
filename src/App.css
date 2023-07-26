@@ -1,10 +1,16 @@
 .liveUpdate{
     position:absolute;
-    top:0;
-    right:0; 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 15px;
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    margin: 15px;
+}
+
+.markRed{
+    color: red;
 }
 
 li{
@@ -17,9 +23,18 @@ li span{
 
 .symptomsCard{
     position:absolute;
-    right:0; 
+    right:0px; 
+    bottom: 0px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 5px;
+    border-radius: 15px;
+    margin: 15px;
 }
   
+.dashboardContainer{
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    height: 560px;
+    margin: 15px;
+}
   

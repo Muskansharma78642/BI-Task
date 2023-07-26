@@ -12,8 +12,8 @@ const LiveUpdate = () => {
         <li><span>5 new cases in Taiwan</span></li>
         <li><span>8 new cases in Japan</span></li>
         <li><span>1 new cases in Brazil</span></li>
-        <li><span>1st new cases in Ecuador</span></li>
-        <li><span>1st new cases in Mexico</span></li>
+        <li className='markRed'><span>1st new cases in Ecuador</span></li>
+        <li className='markRed'><span>1st new cases in Mexico</span></li>
       </ul>
     </div>
   )

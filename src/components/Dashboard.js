@@ -9,7 +9,8 @@ import Symptoms from './Symptoms'
 
 const Dashboard = () => {
   return (
-    <div>
+    <div className='dashboardContainer' >
+        
       Dashboard
       <Cases />
       <Death />
