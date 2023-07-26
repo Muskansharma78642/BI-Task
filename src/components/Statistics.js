@@ -20,7 +20,6 @@ const Statistics = () => {
         let setCaseData = [
             data.AN, data.AP, data.AR, data.AS, data.BR, data.CH, data.CT, data.DL, data.DN, data.GA, data.GJ, data.HP, data.HR, data.JH, data.JK, data.KA, data.KL, data.LA, data.LD, data.MH, data.ML, data.MN, data.MP, data.MZ, data.NL, data.OR, data.PB, data.PY, data.RJ, data.SK, data.TG, data.TN, data.TR, data.TT, data.UP, data.UT, data.WB
         ]
-        console.log(setCaseData);
         setCaseData.map(( singleCase ) => {
             deathCases.push(singleCase.total.deceased);
             recoveredCases.push(singleCase.total.recovered);
